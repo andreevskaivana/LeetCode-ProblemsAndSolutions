@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Example2 {
     //Given an integer x, return true if x is a palindrome, and false otherwise.
 
@@ -15,4 +17,10 @@ public class Example2 {
         return x == pallNumber;
     }
 
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int x=scanner.nextInt();
+        boolean res=isPalindrome(x);
+        System.out.println(res);
+    }
 }
